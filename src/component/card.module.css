@@ -1,0 +1,127 @@
+.card {
+  width: 330px;
+  height: 855px;
+  background: #f8f988;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.profileCard {
+  margin-top: 50px;
+  width: 280.11px;
+  height: 210.08px;
+  background: linear-gradient(
+    315.95deg,
+    #000000 58.32%,
+    rgba(255, 255, 255, 0) 203.98%
+  );
+  filter: drop-shadow(13.0709px 13.0709px 104.567px rgba(63, 39, 102, 0.1));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 31.3701px;
+}
+.socialMediaFrame {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+.socialMediaFrame > img {
+  height: 27px;
+  width: 27px;
+}
+.avtar {
+  position: absolute;
+  width: 116.08px;
+  height: 116.08px;
+  left: 84px;
+  top: calc(50% - 145.08px / 2 - 90px);
+  border: 5.22835px solid #ffffff;
+  border-radius: 65.3544px;
+  background: rgb(241, 149, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(241, 149, 217, 1) 0%,
+    rgba(246, 147, 217, 1) 8%,
+    rgba(29, 253, 231, 1) 54%,
+    rgba(231, 211, 203, 1) 97%
+  );
+}
+h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 15px;
+}
+.url {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #959ba5;
+}
+.cardButtonslist {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.cardButtonslist > button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 0px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+  width: 280px;
+  height: 50px;
+  border-radius: 30px;
+  text-align: left;
+  padding: 10px 20px;
+}
+.personalAccount {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px 16px;
+  gap: 12px;
+  isolation: isolate;
+  position: absolute;
+  height: 95px;
+  width: 215px;
+  left: 50;
+  top: 757px;
+  background: #ffffff;
+  border: 2px solid #1c1c1c;
+  border-radius: 20px;
+  margin: auto;
+}
+.personalAccount > p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1c1c1c;
+}
+.personalAccount > p > span {
+  font-family: "Inter";
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.4);
+}

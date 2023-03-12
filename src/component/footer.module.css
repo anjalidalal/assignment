@@ -1,0 +1,114 @@
+.todo {
+  height: 260px;
+  width: 341px;
+  left: 429px;
+  top: 727px;
+  border-radius: 40px;
+  background: #f8f988;
+  padding: 10px;
+}
+.todo > h1 {
+  font-family: "Inter";
+  text-align: left;
+  margin: 10px 25px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  padding: 10px;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  color: #000000;
+
+  mix-blend-mode: normal;
+}
+input[type="checkbox"]:checked {
+  accent-color: transparent;
+}
+input[type="checkbox"] {
+  accent-color: #000000;
+  color: #f8f988;
+}
+.team {
+  margin-top: 10px;
+  width: 350px;
+  height: 360px;
+  background: #f8f988;
+  border-radius: 40px;
+  padding: 10px 28px;
+}
+.team > h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-align: left;
+  margin: 15px 0px 20px 0px;
+}
+.users {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+.users > p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.usersInfo {
+  width: 248px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.usersInfo > div > img {
+  margin-left: 15px;
+}
+.profilePicture {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  padding: 2px;
+  border: 1px solid black;
+}
+.profilePicture > img {
+  width: 100%;
+}
+.taskButton,
+.memberButton {
+  padding: 10px 15px;
+  border: none;
+  background: #000000;
+  border-radius: 30px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 120%;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.taskButton {
+  margin: 15px 20px;
+}
+.memberButton {
+  margin: 30px 0px 0px 0px;
+}
