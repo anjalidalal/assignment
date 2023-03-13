@@ -1,36 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700&family=Montserrat:wght@300;400;500;700&family=Mulish:wght@400;700&family=Nunito+Sans:wght@200;300;400;600;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&family=Splash&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter";
 }
 body,
 #root {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 10px;
 }
+
 .home {
   width: 100vw;
   padding: 10px 20px;
   display: flex;
-  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
 }
-.rightContainer {
-  margin-left: 10px;
+
+.barchart,
+.linechart {
+  width: 320px;
+  height: 315px;
+  background: #f8f988;
+  backdrop-filter: blur(60px);
+  border-radius: 40px;
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
 }
-.barchart {
-  background-color: black;
-  width: 200px;
-  height: 250px;
+.linechart > div {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin: 5px 12px;
+  display: flex;
+  justify-content: space-between;
 }
-@media (max-width: 768px) {
+.selectYear {
+  width: 100px;
+  height: 29.68px;
+  border: 1px solid #767373;
+  border-radius: 21px;
+}
+select {
+  border: none;
+  width: 90px;
+  background-color: transparent;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0px 10px;
+  color: #8d9092;
+}
+select:focus {
+  outline: none;
+}
+.barchart > h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000000;
+  text-align: left;
+  margin: 0px 15px;
+}
+.barchart > p {
+  font-size: 14px;
+  line-height: 140%;
+  color: #8d9092;
+  margin: 0px 15px;
+}
+.barchart > p > span {
+  color: #01b574;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
   .home {
     width: 100vw;
-    padding: 10px 20px;
+    padding: 10px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    column-gap: 30px;
+  }
+  .main {
+    width: 58%;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

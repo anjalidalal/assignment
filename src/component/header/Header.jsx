@@ -11,10 +11,10 @@ const Header = () => {
         </div>
         <div className={styles.headerIcon}>
           <div className={styles.notifications}>
-            <img src="./notification.png" width="25px" height="25px" alt="" />
+            <img src="./notification.png" width="30px" height="30px" alt="" />
           </div>
           <div className={styles.profile}>
-            <img src="./user.png" width="45px" height="45px" alt="" />
+            <img src="./user.png" width="40px" height="40px" alt="" />
           </div>
         </div>
       </div>

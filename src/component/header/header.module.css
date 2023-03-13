@@ -5,11 +5,12 @@
   font-family: "Inter";
   font-style: normal;
 }
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 0px;
 }
 
 .searchBar {
@@ -43,8 +44,8 @@ input:focus {
 }
 .notifications {
   padding: 10px;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,17 +59,18 @@ input:focus {
   border-radius: 100px;
 }
 .growthStatus {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 10px;
-  margin: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  margin: 15px 0px;
 }
 .growthStatus > div {
-  width: 180px;
+  width: 155px;
   height: 112px;
   border-radius: 16px;
   padding: 10px;
-  margin: 10px 0px;
 }
 .yellowCard,
 .yellowCard > h1,
@@ -112,16 +114,32 @@ input:focus {
   flex: none;
   order: 0;
 }
-
 @media (min-width: 768px) {
   .growthStatus > div {
     width: 210px;
+    height: 112px;
+  }
+  .header {
+    padding: 10px 0px;
   }
   .growthStatus {
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+    margin: 15px 0px;
   }
   .searchBar {
     width: 432px;
+    height: 60px;
+  }
+  .profile > img {
+    width: 58px;
+    height: 58px;
+  }
+  .notifications {
+    width: 60px;
     height: 60px;
   }
 }

@@ -1,12 +1,12 @@
 .card {
-  width: 330px;
+  width: 320px;
   height: 855px;
   background: #f8f988;
   border-radius: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .profileCard {
   margin-top: 50px;
@@ -61,8 +61,6 @@ h1 {
   margin-top: 15px;
 }
 .url {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 140%;
@@ -78,8 +76,6 @@ h1 {
   display: flex;
   align-items: center;
   gap: 15px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 0px;
@@ -99,7 +95,6 @@ h1 {
   padding: 24px 16px;
   gap: 12px;
   isolation: isolate;
-  position: absolute;
   height: 95px;
   width: 215px;
   left: 50;
@@ -112,16 +107,17 @@ h1 {
 .personalAccount > p {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   color: #1c1c1c;
 }
 .personalAccount > p > span {
-  font-family: "Inter";
   font-weight: 400;
   color: rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 768px) {
+  .card {
+    width: 330px;
+  }
 }

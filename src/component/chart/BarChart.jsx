@@ -10,6 +10,7 @@ import {
   PointElement,
 } from "chart.js";
 import { useState } from "react";
+import Team from "../socialcard/Team";
 
 ChartJS.register(
   Title,
@@ -37,15 +38,30 @@ const BarChart = () => {
   });
 
   const options = {
-    pligins: {
-      legend: true,
+    responsive: true,
+    plugins: {
+      legend: {
+        display: false,
+      },
+      title: {
+        display: false,
+        text: "Chart.js Line Chart",
+      },
     },
   };
   return (
     <div>
-      <Bar data={data} options={options} className="barChart">
-        Hello
-      </Bar>
+      <div className="barchart">
+        <Bar data={data} options={options} className="barChart">
+          Hello
+        </Bar>
+        <h1>Orders</h1>
+        <p>
+          {" "}
+          <span>(+23)</span> in last week
+        </p>
+      </div>
+      <Team />
     </div>
   );
 };
