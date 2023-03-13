@@ -19,6 +19,11 @@ body,
 .rightContainer {
   margin-left: 10px;
 }
+.barchart {
+  background-color: black;
+  width: 200px;
+  height: 250px;
+}
 @media (max-width: 768px) {
   .home {
     width: 100vw;

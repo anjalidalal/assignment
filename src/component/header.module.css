@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter";
+  font-style: normal;
 }
 .header {
   display: flex;
@@ -26,8 +28,6 @@ input {
   border: none;
   width: 100px;
   height: 20px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 20px;
@@ -57,7 +57,69 @@ input:focus {
     inset 1px 1px 3px rgba(211, 211, 117, 0.9);
   border-radius: 100px;
 }
+.growthStatus {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  margin: 10px 0px;
+}
+.growthStatus > div {
+  width: 180px;
+  height: 112px;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 10px 0px;
+}
+.yellowCard,
+.yellowCard > h1,
+.yellowCard > p {
+  color: #1c1c1c;
+  background: #f8f988;
+}
+.blackCard,
+.blackCard > h1,
+.blackCard > p {
+  background: #000000;
+  color: #f8f988;
+}
+.yellowCard > h1,
+.blackCard > h1 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  margin: 10px;
+}
+.yellowCard > p,
+.blackCard > p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+.yellowCard > p,
+.blackCard > p {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  justify-content: space-between;
+}
+.yellowCard > p > span,
+.blackCard > p > span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  flex: none;
+  order: 0;
+}
+
 @media (min-width: 768px) {
+  .growthStatus > div {
+    width: 210px;
+  }
+  .growthStatus {
+    display: flex;
+  }
   .searchBar {
     width: 432px;
     height: 60px;

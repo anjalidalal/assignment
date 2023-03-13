@@ -19,10 +19,48 @@ const Header = () => {
         </div>
       </div>
       <div className={styles.growthStatus}>
-        <div className={styles.totalSales}></div>
-        <div className={styles.visits}></div>
-        <div className={styles.newUsers}></div>
-        <div className={styles.activeUsers}></div>
+        <div className={styles.yellowCard}>
+          <h1>Total Sales</h1>
+          <p>
+            721K
+            <span>
+              +11.01%{" "}
+              <img src="./rise(b).png" width="12px" height="12px" alt="" />
+            </span>
+          </p>
+        </div>
+        <div className={styles.blackCard}>
+          {" "}
+          <h1>Visits</h1>
+          <p>
+            367K
+            <span>
+              +9.15% <img src="./rise.png" width="12px" height="12px" alt="" />
+            </span>
+          </p>
+        </div>
+        <div className={styles.yellowCard}>
+          {" "}
+          <h1>New Users</h1>
+          <p>
+            1,156
+            <span>
+              -0.56%{" "}
+              <img src="./crisis.png" width="12px" height="12px" alt="" />
+            </span>
+          </p>
+        </div>
+        <div className={styles.blackCard}>
+          {" "}
+          <h1>Active Users</h1>
+          <p>
+            239K
+            <span>
+              -1.48%{" "}
+              <img src="./crisis2.png" width="12px" height="12px" alt="" />
+            </span>
+          </p>
+        </div>
       </div>
     </>
   );
