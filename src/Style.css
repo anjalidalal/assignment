@@ -22,7 +22,17 @@ body,
   align-items: center;
   margin: auto;
 }
-
+.barchart > canvas {
+  background: linear-gradient(
+    126.97deg,
+    #000000 28.26%,
+    rgba(4, 12, 48, 0.5) 91.2%
+  );
+  padding: 20px 15px;
+  color: #ffff;
+  backdrop-filter: blur(60px);
+  border-radius: 30px;
+}
 .barchart,
 .linechart {
   width: 320px;

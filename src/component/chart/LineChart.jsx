@@ -52,10 +52,20 @@ const LineChart = () => {
         text: "Chart.js Line Chart",
       },
       scales: {
-        y: {
-          min: 0,
-          max: 10,
-        },
+        xAxes: [
+          {
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+            },
+          },
+        ],
+        yAxes: [
+          {
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+            },
+          },
+        ],
       },
     },
   };
@@ -73,11 +83,7 @@ const LineChart = () => {
             </select>
           </div>
         </div>
-        <Line
-          data={data}
-          options={options}
-          style={{ width: "100%", height: "320px", objectFit: "contain" }}
-        >
+        <Line data={data} options={options}>
           Hello
         </Line>
       </div>

@@ -29,10 +29,11 @@ const BarChart = () => {
       {
         label: "Activities",
         data: [310, 200, 250, 500, 400, 450, 300],
-        backgroundColor: "black",
-        borderColor: "white",
+        backgroundColor: "#FFFFFF",
         tension: 0.1,
         snapGaps: false,
+        barThickness: 5,
+        borderRadius: 30,
       },
     ],
   });
@@ -45,14 +46,30 @@ const BarChart = () => {
       },
       title: {
         display: false,
-        text: "Chart.js Line Chart",
+      },
+
+      scales: {
+        xAxes: [
+          {
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+            },
+          },
+        ],
+        yAxes: [
+          {
+            gridLines: {
+              color: "rgba(0, 0, 0, 0)",
+            },
+          },
+        ],
       },
     },
   };
   return (
     <div>
       <div className="barchart">
-        <Bar data={data} options={options} className="barChart">
+        <Bar data={data} options={options}>
           Hello
         </Bar>
         <h1>Orders</h1>
