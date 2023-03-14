@@ -1,11 +1,12 @@
 .todo {
   height: 260px;
-  width: 341px;
+  width: 330px;
   left: 429px;
   top: 727px;
   border-radius: 40px;
   background: #f8f988;
   padding: 10px;
+  margin-top: 10px;
 }
 .todo > h1 {
   text-align: left;
@@ -37,8 +38,8 @@ input[type="checkbox"] {
   color: #f8f988;
 }
 .team {
-  margin-top: 10px;
-  width: 350px;
+  margin-top: 20px;
+  width: 330px;
   height: 360px;
   background: #f8f988;
   border-radius: 40px;
@@ -56,7 +57,7 @@ input[type="checkbox"] {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .users > p {
   font-weight: 400;
@@ -103,9 +104,19 @@ input[type="checkbox"] {
   margin: 30px 0px 0px 0px;
 }
 
-@media (max-width: 768px) {
-  .team,
+@media (min-width: 768px) {
   .todo {
-    width: 320px;
+    position: absolute;
+    width: 341px;
+    height: 260px;
+    left: 429px;
+    top: 727px;
+  }
+  .team {
+    position: absolute;
+    width: 350px;
+    height: 360px;
+    left: 1010px;
+    top: 612px;
   }
 }

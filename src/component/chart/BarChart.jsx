@@ -78,7 +78,6 @@ const BarChart = () => {
           <span>(+23)</span> in last week
         </p>
       </div>
-      <Team />
     </div>
   );
 };

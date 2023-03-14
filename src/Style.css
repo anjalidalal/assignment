@@ -35,7 +35,7 @@ body,
 }
 .barchart,
 .linechart {
-  width: 320px;
+  width: 330px;
   height: 315px;
   background: #f8f988;
   backdrop-filter: blur(60px);
@@ -105,5 +105,19 @@ select:focus {
   .container {
     display: flex;
     flex-wrap: wrap;
+  }
+  .linechart {
+    position: absolute;
+    width: 467px;
+    height: 420px;
+    left: 430px;
+    top: 277px;
+  }
+  .barchart {
+    position: absolute;
+    width: 440px;
+    height: 315px;
+    left: 920px;
+    top: 277px;
   }
 }

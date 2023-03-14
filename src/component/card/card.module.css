@@ -1,5 +1,5 @@
 .card {
-  width: 320px;
+  width: 330px;
   height: 855px;
   background: #f8f988;
   border-radius: 40px;
@@ -118,6 +118,11 @@ h1 {
 }
 @media (min-width: 768px) {
   .card {
+    position: absolute;
     width: 330px;
+    height: 855px;
+    left: 30px;
+    top: 32px;
+    margin: 0px;
   }
 }

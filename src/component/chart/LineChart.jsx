@@ -87,7 +87,6 @@ const LineChart = () => {
           Hello
         </Line>
       </div>
-      <Todo />
     </div>
   );
 };

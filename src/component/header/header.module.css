@@ -59,10 +59,10 @@ input:focus {
   border-radius: 100px;
 }
 .growthStatus {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 10px;
-  row-gap: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 15px;
+  row-gap: 15px;
   align-items: center;
   margin: 15px 0px;
 }
@@ -119,26 +119,38 @@ input:focus {
     width: 210px;
     height: 112px;
   }
+  .searchBar {
+    position: absolute;
+    position: absolute;
+    left: 430px;
+    top: 32px;
+    width: 432px;
+    height: 60px;
+  }
   .header {
     padding: 10px 0px;
   }
   .growthStatus {
+    position: absolute;
+    left: 430px;
+    top: 140px;
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 10px;
-    row-gap: 10px;
+    column-gap: 24px;
     align-items: center;
-    margin: 15px 0px;
   }
-  .searchBar {
-    width: 432px;
-    height: 60px;
+  .profile {
+    position: absolute;
+    left: 1294px;
+    top: 32px;
   }
   .profile > img {
-    width: 58px;
-    height: 58px;
+    width: 56px;
+    height: 56px;
   }
   .notifications {
+    position: absolute;
+    left: 1215px;
+    top: 32px;
     width: 60px;
     height: 60px;
   }
