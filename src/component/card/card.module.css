@@ -117,6 +117,9 @@ h1 {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.4);
 }
+.footer > div {
+  display: none;
+}
 @media (min-width: 768px) {
   .card {
     position: absolute;
@@ -125,5 +128,23 @@ h1 {
     left: 30px;
     top: 32px;
     margin: 0px;
+  }
+  .footer > div {
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .brightness {
+    left: 45px;
+    top: 913px;
+  }
+  .settings {
+    left: 119px;
+    top: 913px;
   }
 }

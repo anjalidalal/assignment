@@ -39,10 +39,10 @@ export const signIn = async () => {
 export const signOut = async () => {
   try {
     await auth.signOut();
-    //store.dispatch(getUser(null));
+    store.dispatch(getUser(null));
   } catch (error) {
     console.log(error);
-    // store.dispatch(getUser(null));
+    store.dispatch(getUser(null));
   }
 };
 

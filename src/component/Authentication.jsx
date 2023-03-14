@@ -7,7 +7,13 @@ const Authentication = () => {
     <div className={styles.signInPage}>
       <div className={styles.modal}>
         <h1>SIGNIN</h1>
-        <button className={styles.signInBtn} onClick={signIn}>
+        <button
+          className={styles.signInBtn}
+          onClick={() => {
+            console.log("hello");
+            signIn();
+          }}
+        >
           <img src="./google.png" width="20px" height="20px" alt="" /> Sign In
           With Google{" "}
         </button>

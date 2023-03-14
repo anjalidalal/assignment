@@ -31,7 +31,11 @@ const Header = () => {
           >
             <img src="./user.png" width="40px" height="40px" alt="" />
           </div>
-          <div className={showMenu ? styles.transition : styles.dropdownMenu}>
+          <div
+            className={
+              showMenu ? styles.dropdownMenu : styles.dropdownMenuDisplayNone
+            }
+          >
             <div>
               <p className={styles.email}>
                 {user?.displayName} <span>{user?.email}</span>
