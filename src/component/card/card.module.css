@@ -33,6 +33,7 @@
 .socialMediaFrame > img {
   height: 27px;
   width: 27px;
+  cursor: pointer;
 }
 .avtar {
   position: absolute;

@@ -1,0 +1,51 @@
+.signInPage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.modal {
+  box-shadow: rgb(0 0 0 / 22%) 0px 13px 24px 0px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: #fff;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  height: 300px;
+}
+.modal > h1 {
+  color: rgb(255, 49, 109);
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.modal > p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+.modal > p > span {
+  cursor: pointer;
+  color: rgb(255, 49, 109);
+}
+.signInBtn {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 190px;
+  display: flex;
+  align-items: center;
+}
+.signInBtn > img {
+  margin-right: 8px;
+}

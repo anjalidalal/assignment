@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./header.module.css";
+import { signOut } from "../firebase";
+import { Navigate, useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
+  const { user } = useSelector((state) => state);
+  console.log(user);
+  const handleSignOut = () => {
+    signOut();
+    Navigate("/");
+  };
   return (
     <>
       <div className={styles.header}>
@@ -13,8 +23,32 @@ const Header = () => {
           <div className={styles.notifications}>
             <img src="./notification.png" width="30px" height="30px" alt="" />
           </div>
-          <div className={styles.profile}>
+          <div
+            className={styles.profile}
+            onClick={() => {
+              setShowMenu(!showMenu);
+            }}
+          >
             <img src="./user.png" width="40px" height="40px" alt="" />
+          </div>
+          <div className={showMenu ? styles.transition : styles.dropdownMenu}>
+            <div>
+              <p className={styles.email}>
+                {user?.displayName} <span>{user?.email}</span>
+              </p>
+            </div>
+            <div>
+              <p>My Profile</p>
+              <p>Account Settings</p>
+            </div>
+            <div>
+              <p>My Likes</p>
+              <p>My Collection</p>
+              <p>Go Pro</p>
+            </div>
+            <button className={styles.signOut} onClick={handleSignOut}>
+              Sign Out
+            </button>
           </div>
         </div>
       </div>

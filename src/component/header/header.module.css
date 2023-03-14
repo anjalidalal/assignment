@@ -12,7 +12,44 @@
   justify-content: space-between;
   padding: 10px 0px;
 }
-
+.transition {
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 125%;
+  color: #ffffff;
+  width: 230px;
+  height: 315px;
+  background: #000000;
+  border: 1px solid #000000;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  margin-top: 80px;
+}
+.transition > div {
+  width: 100%;
+  border-bottom: 2px solid #374151;
+}
+.email {
+  flex-direction: column;
+  display: flex;
+  gap: 5px;
+}
+.transition > div > p {
+  margin: 12px 18px;
+}
+.signOut {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 17px;
+  margin: 12px 18px;
+}
 .searchBar {
   display: flex;
   align-items: center;
@@ -24,7 +61,7 @@
   box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
   border-radius: 30px;
 }
-input {
+.searchBar > input {
   background-color: transparent;
   border: none;
   width: 100px;
@@ -34,6 +71,7 @@ input {
   line-height: 20px;
   color: #f2ff93;
 }
+
 input:focus {
   outline: none;
 }
@@ -58,6 +96,7 @@ input:focus {
     inset 1px 1px 3px rgba(211, 211, 117, 0.9);
   border-radius: 100px;
 }
+
 .growthStatus {
   display: grid;
   grid-template-columns: auto auto;
@@ -138,14 +177,24 @@ input:focus {
     column-gap: 24px;
     align-items: center;
   }
+  .dropdownMenu {
+    position: absolute;
+    left: 1370px;
+    display: none;
+    top: 60px;
+  }
+  .transition {
+    transition: all 0.9s ease;
+    transform: translateX(595px);
+  }
   .profile {
     position: absolute;
     left: 1294px;
     top: 32px;
   }
   .profile > img {
-    width: 56px;
-    height: 56px;
+    width: 58px;
+    height: 60px;
   }
   .notifications {
     position: absolute;

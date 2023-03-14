@@ -6,7 +6,10 @@ const Team = () => {
     <div className={styles.team}>
       <h1>Team</h1>
       <div className={styles.users}>
-        <div className={styles.profilePicture}>
+        <div
+          className={styles.profilePicture}
+          style={{ backgroundColor: "#00C4F0" }}
+        >
           <img src="./avatar.png" alt="" />
         </div>
         <div className={styles.usersInfo}>
@@ -18,7 +21,10 @@ const Team = () => {
         </div>
       </div>
       <div className={styles.users}>
-        <div className={styles.profilePicture}>
+        <div
+          className={styles.profilePicture}
+          style={{ backgroundColor: "#F2AB9A" }}
+        >
           <img src="./avatar.png" alt="" />
         </div>
         <div className={styles.usersInfo}>
@@ -30,7 +36,10 @@ const Team = () => {
         </div>
       </div>
       <div className={styles.users}>
-        <div className={styles.profilePicture}>
+        <div
+          className={styles.profilePicture}
+          style={{ backgroundColor: "#E9000A" }}
+        >
           <img src="./avatar.png" alt="" />
         </div>
         <div className={styles.usersInfo}>
@@ -42,7 +51,10 @@ const Team = () => {
         </div>
       </div>
       <div className={styles.users}>
-        <div className={styles.profilePicture}>
+        <div
+          className={styles.profilePicture}
+          style={{ backgroundColor: "white" }}
+        >
           <img src="./avatar.png" alt="" />
         </div>
         <div className={styles.usersInfo}>

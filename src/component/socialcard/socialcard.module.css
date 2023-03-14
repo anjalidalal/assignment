@@ -10,7 +10,7 @@
 }
 .todo > h1 {
   text-align: left;
-  margin: 10px 25px;
+  margin: 10px;
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
@@ -21,7 +21,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 10px;
+  gap: 10px;
+  margin: 10px 20px;
 }
 label {
   font-weight: 600;
@@ -30,10 +31,10 @@ label {
   color: #000000;
   mix-blend-mode: normal;
 }
-input[type="checkbox"]:checked {
+.checkbox > input[type="checkbox"]:checked {
   accent-color: transparent;
 }
-input[type="checkbox"] {
+.checkbox > input[type="checkbox"] {
   accent-color: #000000;
   color: #f8f988;
 }

@@ -11,9 +11,10 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
 }
-
+button {
+  cursor: pointer;
+}
 .home {
   width: 100vw;
   padding: 10px 20px;
@@ -33,6 +34,7 @@ body,
   backdrop-filter: blur(60px);
   border-radius: 30px;
 }
+
 .barchart,
 .linechart {
   width: 330px;
@@ -43,6 +45,7 @@ body,
   margin: 20px 0px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   padding: 20px 10px;
 }
 .linechart > div {

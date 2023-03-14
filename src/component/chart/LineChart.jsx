@@ -49,23 +49,6 @@ const LineChart = () => {
       },
       title: {
         display: false,
-        text: "Chart.js Line Chart",
-      },
-      scales: {
-        xAxes: [
-          {
-            gridLines: {
-              color: "rgba(0, 0, 0, 0)",
-            },
-          },
-        ],
-        yAxes: [
-          {
-            gridLines: {
-              color: "rgba(0, 0, 0, 0)",
-            },
-          },
-        ],
       },
     },
   };
